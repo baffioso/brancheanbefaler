@@ -4,9 +4,6 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem.snowball import DanishStemmer
 
-app = Flask(__name__)
-
-
 nltk.download('stopwords')
 stopwords = stopwords.words('danish')
 stemmer = DanishStemmer()
@@ -21,10 +18,10 @@ def text_process(name):
 
     return stem
 
-prediction = joblib.load('model/predict_business.pkl')
+pipeline = joblib.load('model/predict_business.pkl')
 
 def predict_business(name):
-    return prediction([name])[0]
+    return pipeline.predict([name])[0]
 
 app = Flask(__name__)
 
@@ -38,8 +35,5 @@ def prediction():
     prediction = predict_business(text)
     return render_template('index.html', text = prediction)
 
-
-if __name__ == "__main__":
-    # Only for debugging while developing
-    #app.run(host='0.0.0.0', debug=True, port=80)
-    app.run(debug=True, port=5005)
+if __name__ == '__main__':
+    app.run(debug = True, port=1234)
