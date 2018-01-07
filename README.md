@@ -29,9 +29,11 @@ deactivate
 jupyter notebook
 ```
 
-* Start app'en op åben din browser på localhost:5000
+* Start app'en åben din browser på localhost:5000
 ```
 cd app
 source venv/bin/activate
 python3 main.py
 ```
+
+ * Åben din browser på `localhost:5000` og slå dig løs
