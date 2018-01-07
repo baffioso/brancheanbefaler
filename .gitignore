@@ -1,4 +1,5 @@
 app/model
 app/venv
+venv
 notebook/venv
 notebook/data
