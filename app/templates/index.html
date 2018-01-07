@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Brancheanbefaler</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <style>
+            .jumbotron {margin-top: 300px;}
+            .row {margin-top: 20px}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <div class=row>
+                    <div class="col-md-12">
+                        <form method = "post">
+                            <div class="input-group">
+                                <input type="text" name="text" class="form-control" placeholder="Indtast virksomhedsnavn...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="submit">Anbefal en branche</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 ">
+                        {% if text %}
+                            <h6>Anbefaling:  <span class="badge badge-pill badge-success">{{ text }}</span></h6>
+                        {% endif %}
+                    </div>
+                </div>
+            <div>
+        </div> 
+    </body>
+</html>
