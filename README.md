@@ -26,6 +26,7 @@ deactivate
 
 * Åben notebook og kør koden gem modellen i .pkl format i under `app/model` ved at køre alle celler i notebook.
 ```
+mkdir /app/model
 jupyter notebook
 ```
 
