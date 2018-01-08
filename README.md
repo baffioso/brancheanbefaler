@@ -30,6 +30,7 @@ deactivate
 mkdir app/model
 jupyter notebook
 ```
+<img src="https://user-images.githubusercontent.com/7534153/34687230-6278df22-f4ae-11e7-9a91-7248eb909490.png" width="250" />
 
 * Start app'en
 ```bash
