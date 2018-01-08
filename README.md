@@ -1,6 +1,6 @@
 # Brancheanbefaler
-Notebook og webapp som ved hjælp af Machine Learning og data fra CVR kan anbefale brancher
-![image](https://user-images.githubusercontent.com/7534153/34677205-aed9d3a4-f48f-11e7-97b4-d7a432d7e50f.png)
+[Notebook](https://github.com/baffioso/brancheanbefaler/blob/master/notebook/brancheanbefaler.ipynb) og webapp som ved hjælp af Machine Learning og data fra CVR kan anbefale brancher
+![image](https://user-images.githubusercontent.com/7534153/34677306-fae58194-f48f-11e7-991f-d51621bc1212.png)
 
 # Installation
 * Gå ind i folderen brancheanbefaler og lav mapperne
