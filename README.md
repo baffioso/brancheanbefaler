@@ -3,19 +3,19 @@
 ![image](https://user-images.githubusercontent.com/7534153/34677306-fae58194-f48f-11e7-991f-d51621bc1212.png)
 
 # Installation
-* Gå ind i folderen brancheanbefaler og lav mapperne
-mkdir app/model
-
 * Udpak notebook/data.zip
-
-* Lav virtualenv for henholdsvis notebook og app
+* Gå ind i folderen brancheanbefaler
+```bash
+cd /sti/til/brancheanbefaler
 ```
+* Lav virtualenv for henholdsvis notebook og app
+```bash
 virtualenv app/venv -p python3
 virtualenv notebook/venv -p python3
 ```
 
 * Aktiver virtuelt miljø og installer afhængigheder
-```
+```bash
 source app/venv/bin/activate
 pip3 install -r app/requirements.txt
 deactivate
@@ -25,14 +25,14 @@ pip3 install -r notebook/requirements.txt
 deactivate
 ```
 
-* Åben notebook og kør koden gem modellen i .pkl format i under `app/model` ved at køre alle celler i notebook.
-```
+* Opret mappe til modellen og kør alle celler notebooken. Herved gemmes modellen i .pkl format i under `app/model` som skal bruges i app'en.
+```bash
 mkdir app/model
 jupyter notebook
 ```
 
-* Start app'en åben din browser på localhost:5000
-```
+* Start app'en
+```bash
 cd app
 source venv/bin/activate
 python3 main.py
