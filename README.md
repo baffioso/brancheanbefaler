@@ -1,5 +1,5 @@
 # Brancheanbefaler
-[Notebook](https://github.com/baffioso/brancheanbefaler/blob/master/notebook/brancheanbefaler.ipynb) og webapp som ved hjælp af Machine Learning og data fra CVR kan anbefale brancher
+[Notebook](https://github.com/baffioso/brancheanbefaler/blob/master/notebook/brancheanbefaler.ipynb) og webapp som ved hjælp af Machine Learning og data fra CVR kan anbefale brancher ud fra virksomhedsnavn.
 ![image](https://user-images.githubusercontent.com/7534153/34677306-fae58194-f48f-11e7-991f-d51621bc1212.png)
 
 # Installation
